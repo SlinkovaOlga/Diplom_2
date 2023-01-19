@@ -1,4 +1,4 @@
-package JSON;
+package json;
 
 public class User {
     private String email;

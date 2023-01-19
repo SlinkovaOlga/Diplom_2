@@ -1,4 +1,4 @@
-package Users;
+package users;
 
 import io.qameta.allure.Step;
 import lombok.Data;

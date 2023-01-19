@@ -1,7 +1,7 @@
-package JSON;
+package json;
 
 public class LoginResponse {
-    boolean success;
+    private boolean success;
     private User user;
 
     public boolean getSuccess() {

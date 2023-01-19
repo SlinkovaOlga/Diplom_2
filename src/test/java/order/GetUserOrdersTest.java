@@ -1,8 +1,8 @@
-package Order;
+package order;
 
-import Users.RestAssuredUser;
-import Users.UserClient;
-import Users.UsersData;
+import users.RestAssuredUser;
+import users.UserClient;
+import users.UsersData;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
@@ -16,7 +16,6 @@ public class GetUserOrdersTest extends RestAssuredUser {
     UsersData usersData;
     private UserClient userClient;
     private String token;
-
 
     public void setUp() {
         userClient = new UserClient();

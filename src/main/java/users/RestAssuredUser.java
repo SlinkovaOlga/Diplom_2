@@ -1,4 +1,4 @@
-package Users;
+package users;
 
 import com.github.javafaker.Faker;
 import io.restassured.specification.RequestSpecification;

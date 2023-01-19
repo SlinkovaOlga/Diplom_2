@@ -1,9 +1,9 @@
-package User;
+package user;
 
-import Users.RestAssuredUser;
-import Users.UserClient;
-import Users.UsersCredentials;
-import Users.UsersData;
+import users.RestAssuredUser;
+import users.UserClient;
+import users.UsersCredentials;
+import users.UsersData;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
