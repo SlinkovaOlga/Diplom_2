@@ -27,6 +27,14 @@ public class CreateUserNegativeTest extends RestAssuredUser {
         usersData = UsersData.getRandom();
     }
 
+    @After
+    public void tearDown() {
+        if (token != null) {
+            userClient.deleteUser(token.substring(7));
+        }
+        ;
+    }
+
     @Test
     @DisplayName("Create User Without Password")
     @Description("Создание клиента без пароля")
@@ -87,8 +95,6 @@ public class CreateUserNegativeTest extends RestAssuredUser {
                 .extract()
                 .path("success");
         Assert.assertFalse(result);
-        if (token != null) {
-            userClient.deleteUser(token.substring(7));
-        }
+
     }
 }
